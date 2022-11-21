@@ -7,31 +7,6 @@
     <title>Калькулятор</title>
 </head>
 <body>
-    <script>
-        const action = prompt('Enter operator ( either: add, sub, mult, div )')
-            const firstNumber = prompt('Enter yours first number')
-            const secondNumber = prompt('Enter yours second number')
-            let result
-            switch (true) {
-                case action === 'add':
-                    result = (+firstNumber) + (+secondNumber)
-                    alert(`${firstNumber} + ${secondNumber} = ${result}`)
-                    break;
-                case action === 'sub':
-                    result = firstNumber - secondNumber
-                    alert(`${firstNumber} - ${secondNumber} = ${result}`)
-                    break;
-                case action === 'mult':
-                    result = firstNumber * secondNumber
-                    alert(`${firstNumber} * ${secondNumber} = ${result}`)
-                    break;
-                case action === 'div':
-                    result = firstNumber / secondNumber
-                    alert(`${firstNumber} / ${secondNumber} = ${result}`)
-                    break;
-                default:
-                    alert("Sorry, something went wrong");
-            }
-    </script>
+    <script src="../scripts/calculator.js"></script>
 </body>
 </html>
